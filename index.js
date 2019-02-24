@@ -8,7 +8,7 @@ const cors = require("cors");
 
 app.use(cors());
 
-mongoose.connect("DB_URL", {
+mongoose.connect(`${process.env.DB_URL}`, {
   useNewUrlParser: true,
 });
 
